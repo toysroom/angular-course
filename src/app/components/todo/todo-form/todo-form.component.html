@@ -1,0 +1,11 @@
+<form (ngSubmit)="addTodo()">
+    <div class="mb-3">
+      <label for="name" class="form-label">Name</label>
+      <input type="text" class="form-control" name="name" id="name" [(ngModel)]="name" >
+    </div>
+    <div class="mb-3">
+      <label for="desc" class="form-label">Descrizione</label>
+      <textarea class="form-control" id="desc" name="desc" [(ngModel)]="desc"></textarea>
+    </div>
+    <button class="btn btn-primary">Aggiungi todo</button>
+</form>

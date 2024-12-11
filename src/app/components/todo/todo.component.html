@@ -1,0 +1,11 @@
+<h1>Todo List</h1>
+
+<app-todo-form
+    (add)="todoService.addTodo($event)"
+/>
+<app-todo-list 
+    [todos]="todoService.todos" 
+    label1="Cancella" 
+    (action1)="todoService.delTodo($event)"
+    (action2)="todoService.doneTodo($event)"    
+    />
